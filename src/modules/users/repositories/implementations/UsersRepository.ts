@@ -32,7 +32,7 @@ class UsersRepository implements IUsersRepository {
     return user;
   }
 
-  findById(id: string): User | undefined {
+  findById(id: string | string[]): User | undefined {
     const user = this.users.find((user) => user.id === id);
     return user;
   }
